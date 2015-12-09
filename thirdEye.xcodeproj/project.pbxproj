@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3F9879C61CD09C61B242AF /* libPods-thirdEye.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D936EA7181B07BC95B76D7 /* libPods-thirdEye.a */; };
 		865A074F1C17614D006C5E10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 865A074E1C17614D006C5E10 /* main.m */; };
 		865A07521C17614D006C5E10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 865A07511C17614D006C5E10 /* AppDelegate.m */; };
 		865A07551C17614D006C5E10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865A07541C17614D006C5E10 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4B1CFDE6DED7365B4D5EC7 /* Pods-thirdEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thirdEye.release.xcconfig"; path = "Pods/Target Support Files/Pods-thirdEye/Pods-thirdEye.release.xcconfig"; sourceTree = "<group>"; };
+		860F83211C17E0E0008C879D /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
 		865A074A1C17614D006C5E10 /* thirdEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thirdEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865A074E1C17614D006C5E10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		865A07501C17614D006C5E10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		865A076E1C17614D006C5E10 /* thirdEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thirdEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		865A07721C17614D006C5E10 /* thirdEyeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thirdEyeUITests.m; sourceTree = "<group>"; };
 		865A07741C17614D006C5E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D936EA7181B07BC95B76D7 /* libPods-thirdEye.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thirdEye.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D2B6DFD7297CC2314EFD43 /* Pods-thirdEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thirdEye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thirdEye/Pods-thirdEye.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3F9879C61CD09C61B242AF /* libPods-thirdEye.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A2398A1B8752121D32B91F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4D2B6DFD7297CC2314EFD43 /* Pods-thirdEye.debug.xcconfig */,
+				0C4B1CFDE6DED7365B4D5EC7 /* Pods-thirdEye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		865A07411C17614D006C5E10 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,8 @@
 				865A07661C17614D006C5E10 /* thirdEyeTests */,
 				865A07711C17614D006C5E10 /* thirdEyeUITests */,
 				865A074B1C17614D006C5E10 /* Products */,
+				7A2398A1B8752121D32B91F1 /* Pods */,
+				A65D3F00B34D7E68BD558AE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +118,7 @@
 		865A074C1C17614D006C5E10 /* thirdEye */ = {
 			isa = PBXGroup;
 			children = (
+				860F83211C17E0E0008C879D /* ip.h */,
 				865A07501C17614D006C5E10 /* AppDelegate.h */,
 				865A07511C17614D006C5E10 /* AppDelegate.m */,
 				865A07531C17614D006C5E10 /* ViewController.h */,
@@ -140,6 +158,14 @@
 			path = thirdEyeUITests;
 			sourceTree = "<group>";
 		};
+		A65D3F00B34D7E68BD558AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D936EA7181B07BC95B76D7 /* libPods-thirdEye.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 865A07771C17614D006C5E10 /* Build configuration list for PBXNativeTarget "thirdEye" */;
 			buildPhases = (
+				54247F5E4D97E224888FC7E4 /* Check Pods Manifest.lock */,
 				865A07461C17614D006C5E10 /* Sources */,
 				865A07471C17614D006C5E10 /* Frameworks */,
 				865A07481C17614D006C5E10 /* Resources */,
+				0507A121D98434638EE4AD72 /* Embed Pods Frameworks */,
+				5E100B639F85A54E15DE529F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +293,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0507A121D98434638EE4AD72 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thirdEye/Pods-thirdEye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54247F5E4D97E224888FC7E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E100B639F85A54E15DE529F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thirdEye/Pods-thirdEye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		865A07461C17614D006C5E10 /* Sources */ = {
@@ -409,8 +486,9 @@
 		};
 		865A07781C17614D006C5E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D2B6DFD7297CC2314EFD43 /* Pods-thirdEye.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = thirdEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joncomo.thirdEye;
@@ -420,8 +498,9 @@
 		};
 		865A07791C17614D006C5E10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4B1CFDE6DED7365B4D5EC7 /* Pods-thirdEye.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = thirdEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joncomo.thirdEye;
@@ -496,6 +575,7 @@
 				865A07791C17614D006C5E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		865A077A1C17614D006C5E10 /* Build configuration list for PBXNativeTarget "thirdEyeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +584,7 @@
 				865A077C1C17614D006C5E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		865A077D1C17614D006C5E10 /* Build configuration list for PBXNativeTarget "thirdEyeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +593,7 @@
 				865A077F1C17614D006C5E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
